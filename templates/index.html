@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<body  align="center" style="background-color:SlateBlue;">
+<head>
+  <meta charset="UTF-8">
+  <title>☎️ 📞Telecom Churn Analytics</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Tangerine', serif;
+        font-size: 28px;
+      }
+      #myHeader {
+  background-color:#ff6347;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+    </style>
+
+
+</head>
+
+<body>
+ <div class="login">
+	<h1 style="text-align:center" id="myHeader">Telecom Churn Analytics ☎️ 📞 📟</h1>
+    <CENTER>
+    <form align="center" action="{{ url_for('predict')}}"method="post">
+    	<input type="text" style="text-align:center"  name="total_ic_mou_8" placeholder="total_ic_mou_8" required="required" />
+        <br>
+        <input type="text" style="text-align:center" name="total_rech_amt_diff" placeholder="total_rech_amt_diff" required="required" />
+        <br>
+		<input type="text" style="text-align:center" name="total_og_mou_8" placeholder="total_og_mou_8" required="required" />
+        <br>
+        <input type="text" style="text-align:center" name="arpu_8" placeholder="arpu_8" required="required" />
+        <br>
+        <input type="text" style="text-align:center" name="roam_ic_mou_8" placeholder="roam_ic_mou_8" required="required" />
+        <br>
+		<input type="text" style="text-align:center" name="roam_og_mou_8" placeholder="roam_og_mou_8" required="required" />
+        <br>
+        <input type="text" style="text-align:center" name="std_ic_mou_8" placeholder="std_ic_mou_8" required="required" />
+        <br>
+        <input type="text" style="text-align:center" name="av_rech_amt_data_8" placeholder="av_rech_amt_data_8" required="required" />
+        <br>
+		<input type="text" style="text-align:center" name="std_og_mou_8" placeholder="std_og_mou_8" required="required" />
+        <br>
+        <button align="center" class="btn btn-primary" type="submit" value="Submit">Predict</button>
+    </form>
+    </CENTER>
+
+   <br>
+   <br>
+   <CENTER>
+     ☎️ {{ prediction_text }}  ☎️
+   </CENTER>  
+ </div>
+
+
+</body>
+</html>
