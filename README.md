@@ -10,3 +10,7 @@ To reduce customer churn, telecom companies need to predict which customers are 
 In this project, we analysed customer-level data of a leading telecom firm, build predictive models to identify customers at high risk of churn and identify the main indicators of churn.
 
 You can also access the Live web-app [here.](https://telecom-churn-analysis-app.herokuapp.com/)
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/29462447/101314072-c6a98d00-387d-11eb-91ba-9b9051f9dba0.png" data-canonical-src="https://user-images.githubusercontent.com/29462447/101314072-c6a98d00-387d-11eb-91ba-9b9051f9dba0.png"/> 
+</kbd>
