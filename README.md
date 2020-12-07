@@ -14,3 +14,19 @@ You can also access the Live web-app [here.](https://telecom-churn-analysis-app.
 <kbd>
 <img src="https://user-images.githubusercontent.com/29462447/101314072-c6a98d00-387d-11eb-91ba-9b9051f9dba0.png" data-canonical-src="https://user-images.githubusercontent.com/29462447/101314072-c6a98d00-387d-11eb-91ba-9b9051f9dba0.png"/> 
 </kbd>
+
+### Running the Dockerized App
+1. Ensure you have Docker Installed and Setup in your OS (Windows/Mac/Linux). For detailed Instructions, please refer [this.](https://docs.docker.com/engine/install/)
+2. Navigate to the folder where you have cloned this repository ( where the ***Dockerfile*** is present ).
+3. Build the Docker Image (don't forget the dot!! :smile: ): 
+```
+docker build --tag telecom_churn_app .
+```
+4. Run the docker:
+```
+docker run --publish 8000:8080 --detach --name bb telecom_churn_app
+```
+
+This will launch the dockerized app. Navigate to ***localhost:8000*** in your browser to have a look at your application. You can check the status of your all available running dockers by:
+```
+docke
